@@ -19,7 +19,8 @@
         android:theme="@style/AppTheme">
 
         <!-- 스플래쉬 액티비티 -->
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,14 +35,7 @@
             android:label="@string/title_activity_login" />
 
         <!-- 메인 액티비티 -->
-        <activity android:name=".MainActivity">
-
-        </activity>
-
-
-
-
-
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

@@ -121,18 +121,22 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * If there are form errors (invalid email, missing fields, etc.), the
      * errors are presented and no actual login attempt is made.
      */
-    private void attemptLogin() {
+    private void attemptLogin()
+    {
+        AutoCompleteTextView emailView = (AutoCompleteTextView) findViewById(R.id.email);
+        String strUserID = emailView.getText().toString();
 
-        //보내는 Activity
+        // 로그인 성공시 글로벌변수 SET
+        UserInf uInfo = GlobalVal.getInstance().getUserInfo();
+        uInfo.setUserID(strUserID.trim()); // 아이디
+        uInfo.setBranchID("8119");
+        uInfo.setBranchNM("안양 지하상가");
+        uInfo.setCompanyNM("휴먼텔레콤");
+
         Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("LOGIN_USER_ID", "111");
-        intent.putExtra("LOGIN_COMPANY_NM", "222");
-        intent.putExtra("LOGIN_BRANCH_NM", "333");
-        intent.putExtra("LOGIN_BRANCH_ID", "444");
-        startActivityForResult(intent, 1);
+        startActivity(intent);
 
         finish();
-
 
 //        if (mAuthTask != null) {
 //            return;

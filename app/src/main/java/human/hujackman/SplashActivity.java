@@ -29,7 +29,10 @@ public class SplashActivity extends AppCompatActivity {
     // 환경설정및 네트워크등 체크
     protected boolean init()
     {
-        // 처리할 작업 수행.
+        // SET 글로벌 환경변수
+        AppConf conf = GlobalVal.getInstance().getAppConf();
+        conf.setSvrUrl("http://human.hujackman.co.kr");
+
         return true;
     }
 }
