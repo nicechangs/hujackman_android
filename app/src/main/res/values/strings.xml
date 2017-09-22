@@ -14,4 +14,19 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+
+    <!-- 메인액티비티 -->
+    <string name="action_input_item">입고</string>
+    <string name="action_output_item">출고</string>
+    <string name="action_return_item">반품</string>
+    <string name="action_hist_item">입/출고 이력</string>
+    <string name="action_inven_item">입/출고 이력</string>
+    <string name="action_stat_item">판매현황</string>
+
+
+
+
+
 </resources>

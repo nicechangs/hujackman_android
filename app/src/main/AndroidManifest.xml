@@ -35,7 +35,7 @@
             android:label="@string/title_activity_login" />
 
         <!-- 메인 액티비티 -->
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
