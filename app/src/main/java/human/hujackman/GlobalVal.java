@@ -39,6 +39,20 @@ class AppConf
 
 // 사용자정보
 class UserInf {
+    public String mCOMP_CD   = "";
+    public String mBR_CD     = "";
+    public String mBR_NM     = "";
+    public String mUSR_ID    = "";
+    public String mUSR_CD    = "";
+    public String mUSR_PWD   = "";
+    public String mUSR_NM    = "";
+    public String mUSR_DOB   = "";
+    public String mUSR_TELNO = "";
+    public String mUSR_EMAIL = "";
+    public String mUSR_ADDR  = "";
+    public String mUSR_GRANT = "";
+
+    /*
     protected String m_strUserID;
     protected String m_strCompanyNM;
     protected String m_strBranchNM;
@@ -55,4 +69,5 @@ class UserInf {
     public void setCompanyNM( String p_strCompanyNM)    { m_strCompanyNM = p_strCompanyNM; }
     public void setBranchNM( String p_strBranchNM)      { m_strBranchNM = p_strBranchNM; }
     public void setBranchID( String p_strBranchID)      { m_strBranchID = p_strBranchID; }
+    */
 }

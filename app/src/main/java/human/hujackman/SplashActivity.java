@@ -9,6 +9,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         // 레이아웃을 사용하지 않고 스플래시를 만든다.
         // setContentView(R.layout.activity_splash);
 
@@ -31,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
     {
         // SET 글로벌 환경변수
         AppConf conf = GlobalVal.getInstance().getAppConf();
-        conf.setSvrUrl("http://human.hujackman.co.kr");
+        conf.setSvrUrl("http://192.168.0.10:3000/");
 
         return true;
     }

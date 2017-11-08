@@ -36,6 +36,7 @@
 
         <!-- 메인 액티비티 -->
         <activity android:name=".MainActivity" />
+        <activity android:name=".WebSvc"></activity>
     </application>
 
 </manifest>

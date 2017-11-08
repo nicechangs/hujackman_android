@@ -13,10 +13,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         UserInf usr = GlobalVal.getInstance().getUserInfo();
-        String LOGIN_USER_ID = usr.getUserID();
-        String LOGIN_COMPANY_NM = usr.getCompanyNM();
-        String LOGIN_BRANCH_NM = usr.getBranchNM();
-        String LOGIN_BRANCH_ID = usr.getBranchID();
 
     }
 }
