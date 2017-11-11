@@ -11,8 +11,10 @@ import android.view.View.OnClickListener;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -26,17 +28,14 @@ import java.net.URL;
 
 public class LoginActivity extends Activity {
 
-    private View mProgressView;
-    private View mLoginFormView;
     private String mUserId;
     private String mPassword;
     private String mErrorMessage;
 
     // 메인액티비티 인턴트
     protected  Intent mMainIntent;
-
+    // Alert
     android.app.AlertDialog.Builder mAlert;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +43,15 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
 
         mMainIntent = new Intent(this, MainActivity.class);
+
+        // 임시코드
+        // 사용자아이디
+        AutoCompleteTextView v_userId = (AutoCompleteTextView) findViewById(R.id.user_id);
+        v_userId.setText("nice");
+
+        // 비밀번호
+        EditText v_password = (EditText) findViewById(R.id.password);
+        v_password.setText("0956");
 
         Button btn = (Button) findViewById(R.id.sign_in_button);
         btn.setOnClickListener(new OnClickListener() {
@@ -214,27 +222,6 @@ public class LoginActivity extends Activity {
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 

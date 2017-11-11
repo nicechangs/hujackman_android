@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">hujackman</string>
-    <string name="title_activity_login">Sign in</string>
+    <string name="app_name">Inventory Manager</string>
+    <string name="title_activity_login">Inventory Manager</string>
 
     <!-- Strings related to login -->
     <string name="prompt_user_id">User ID</string>
@@ -8,23 +8,70 @@
     <string name="action_sign_in">Sign in</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
     <string name="title_activity_main2">Main2Activity</string>
-
     <string name="failed_network_1001">Can not connect to the server. Check the network.</string>
-
     <string name="failed_login_1001">Invalid user ID or password</string>
 
 
     <!-- 메인액티비티 -->
-    <string name="action_input_item">입고</string>
-    <string name="action_output_item">출고</string>
+    <string name="action_input_item">입고업무</string>
+    <string name="action_output_item">출고업무</string>
     <string name="action_return_item">반품</string>
-    <string name="action_hist_item">입/출고 이력</string>
-    <string name="action_inven_item">입/출고 이력</string>
+    <string name="action_hist_item">입고/출고 이력조회</string>
+    <string name="action_inven_item">재고현황</string>
     <string name="action_stat_item">판매현황</string>
+
+    <!-- INBOUND -->
+    <string name="inbound_select_empty">선택해주세요</string>
+    <string name="inbound_company_name">거래처</string>
+    <string name="inbound_branch_name">대리점</string>
+    <string name="inbound_vendor">통신사</string>
+    <string name="inbound_basic_item_code">품목명</string>
+    <string name="inbound_memo">메모</string>
+    <string name="inbound_action_barcode">BARCODE</string>
+    <string name="inbound_action_submit">SUBMIT</string>
+
+    <string name="inbound_vendor_skt">SKT</string>
+    <string name="inbound_vendor_kt">KT</string>
+    <string name="inbound_vendor_lg">LG U+</string>
+
+    <string name="inbound_select_bizcomp">거래처를 선택하세요</string>
+    <string name="inbound_select_vendor">통신사를 선택하세요</string>
+    <string name="inbound_select_bscitem">품목을 선택하세요</string>
+    <string name="inbound_select_branch">거래점을 선택하세요</string>
+    <string name="inbound_select_barcode">바코드를 입력하세요</string>
+
+    <string name="inbound_result_success">입고를 완료하였습니다</string>
+    <string name="inbound_result_fail">입고를 실패하였습니다</string>
+    <string name="inbound_result_fail_1001">이미 등록된 바코드입니다</string>
+
+    <!-- OUTBOUND -->
+    <string name="outbound_barcode_search">검색</string>
+    <string name="outbound_trx_cd">거래번호</string>
+    <string name="outbound_biz_nm">입고처</string>
+    <string name="outbound_inb_dt">입고일시</string>
+    <string name="outbound_br_nm">거래점</string>
+    <string name="outbound_bscitem_cd">품목</string>
+    <string name="outbound_usr_nm">등록자</string>
+    <string name="outbound_memo">메모</string>
+    <string name="outbound_nothing">입고 이력이 없습니다</string>
+    <string name="outbound_nothing_trxcd">거래번호가 존재하지 않습니다</string>
+    <string name="outbound_result_success">출고를 완료하였습니다</string>
+    <string name="outbound_result_fail">출고를 실패하였습니다</string>
+
+    <!-- IOHistory -->
+    <string name="IOHistory_info_trx_cd">거래번호</string>
+    <string name="IOHistory_info_reg_dt">거래일자</string>
+    <string name="IOHistory_info_trx_st">거래유형</string>
+    <string name="IOHistory_info_inb_biz_nm">입고처</string>
+    <string name="IOHistory_info_bscitem_cd">품목</string>
+    <string name="IOHistory_info_bar_cd">바코드</string>
+    <string name="IOHistory_info_out_biz_nm">출고처</string>
+    <string name="IOHistory_info_usr_nm">작업자</string>
+    <string name="IOHistory_info_inbound">입고</string>
+    <string name="IOHistory_info_outbound">출고</string>
+
 
 
 </resources>

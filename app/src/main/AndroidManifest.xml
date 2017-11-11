@@ -36,7 +36,20 @@
 
         <!-- 메인 액티비티 -->
         <activity android:name=".MainActivity" />
-        <activity android:name=".WebSvc"></activity>
+
+        <!-- 웹서비스 -->
+        <activity android:name=".WebSvc" />
+
+        <!-- 바코드 세로방향을 위한 Activity -->
+        <activity
+            android:name=".CaptureActivityAnyOrientation"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".InboundActivity"  android:label="Inbound Manage" />
+        <activity android:name=".OutboundActivity" android:label="Outbound Manage" />
+        <activity android:name=".IOHistory" android:label="Inquiry History"></activity>
     </application>
 
 </manifest>
