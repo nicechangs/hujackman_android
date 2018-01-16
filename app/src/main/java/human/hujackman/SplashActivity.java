@@ -33,7 +33,7 @@ public class SplashActivity extends AppCompatActivity {
         // SET 글로벌 환경변수
         AppConf conf = GlobalVal.getInstance().getAppConf();
         //conf.setSvrUrl("http://192.168.0.10:3000/");
-        conf.setSvrUrl("http://172.16.1.254:3000/");
+        conf.setSvrUrl("http://192.168.10.152:3000/");
 
         return true;
     }
